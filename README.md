@@ -5,22 +5,22 @@
 # Todos
 
 - Writing
-  - [] List Articles
-  - [] Create, Modify & Delete Article
-  - [] Publish & Unpublish
+  - [ ] List Articles
+  - [ ] Create, Modify & Delete Article
+  - [ ] Publish & Unpublish
 
 - Configuration
-  - [] Backup Configuration
-  - [] List Layouts
-  - [] Create, Modify & Delete Layout
-  - [] List Configurations
-  - [] Modify Configuration
-  - [] List Themes
-  - [] Switch Theme
-  - [] Create, Modify & Delete Layout For Theme
-  - [] Modify Configuration For Theme
-  - [] Login Authentication
+  - [ ] Backup Configuration
+  - [ ] List Layouts
+  - [ ] Create, Modify & Delete Layout
+  - [ ] List Configurations
+  - [ ] Modify Configuration
+  - [ ] List Themes
+  - [ ] Switch Theme
+  - [ ] Create, Modify & Delete Layout For Theme
+  - [ ] Modify Configuration For Theme
+  - [ ] Login Authentication
 
 - Depolyment
-  - [] Generate Command
-  - [] Deploy Command
+  - [ ] Generate Command
+  - [ ] Deploy Command
