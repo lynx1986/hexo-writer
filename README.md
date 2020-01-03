@@ -1,6 +1,6 @@
 # hexo-writer
 
-** hexo-writer ** is a live tool for editing and configuring hexo content.
+**hexo-writer** is a live tool for editing and configuring hexo content.
 
 # Todos
 
