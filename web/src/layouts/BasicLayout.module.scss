@@ -1,0 +1,51 @@
+
+.aside {
+  min-width: 200px;
+}
+
+.main {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.header {
+  padding: 8px 16px;
+  border-bottom: solid 1px #CCC;
+}
+
+.headerInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.body {
+  padding: 16px;
+  
+}
+
+.footer {
+
+}
+
+.breadcrumb {
+  flex: 1;
+  padding: 16px 0px;
+}
+
+.settingWrapper {
+  position: fixed;
+  z-index: 1000;
+  top: 120px;
+  width: 200px;
+  height: 400px;
+  border: solid 1px #CCC;
+  border-radius: 4px;
+  background-color: #FFF;
+}
+
+.settingContent {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}

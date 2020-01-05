@@ -1,0 +1,25 @@
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .table {
+    min-height: 400px;
+  }
+  
+  .loading {
+    width: 100%;
+  }
+  
+  .pagination {
+    text-align: right;
+    margin-top: 12px;
+  }
+  
+  .actionBar {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-end;
+  }

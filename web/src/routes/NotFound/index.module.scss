@@ -1,0 +1,6 @@
+@import "@/assets/style/page.scss";
+
+.page {
+  composes: page page-center;
+  margin-top: 40px;
+}

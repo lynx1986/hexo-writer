@@ -1,0 +1,28 @@
+
+.item {
+  height: 85px;
+  text-align: center;
+  width: 100px;
+  float: left;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.item:hover {
+  background-color: #EDEDED;
+}
+
+.name {
+  display: block;
+  font-size: 14px;
+  color: #AEAEAE;
+}
+
+.tabContent {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.divider {
+  margin-top: 50px;
+}

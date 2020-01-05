@@ -1,0 +1,12 @@
+{
+  "name": "hexo-admin",
+  "dependencies": {
+    "egg": "^2.26.0",
+    "egg-bin": "^4.14.1",
+    "egg-cors": "^2.2.3",
+    "hexo": "^4.2.0"
+  },
+  "scripts": {
+    "dev": "egg-bin dev"
+  }
+}
