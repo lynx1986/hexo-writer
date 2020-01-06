@@ -60,7 +60,7 @@ class Base {
   }
 
   @action
-   async updatePage(page, domain='basic') {
+  async updatePage(page, domain='basic') {
 
     // 取得store
     const store = this[domain];
@@ -119,6 +119,34 @@ class Base {
 
       store.status.refreshing = false;
       store.response.refresh = rsp.code;
+
+      // 执行回调方法
+      this.execCallback(callback, rsp.code, rsp.data);
+    });
+  }
+
+  @action
+  async loadItem(url, callback, domain='basic') {
+
+    // 取得store
+    const store = this[domain];
+
+    runInAction('列表Item开始', () => { store.status.loading = true; });
+
+    // 请求数据
+    const rsp = await api.request(url);
+
+    // 取得结果
+    runInAction('列表加载结束', () => {
+
+      if (rsp.code == 200) {
+        
+        const { data: { item } } = rsp;
+        store.item = item;
+      }
+
+      store.status.loading = false;
+      store.response.load = rsp.code;
 
       // 执行回调方法
       this.execCallback(callback, rsp.code, rsp.data);

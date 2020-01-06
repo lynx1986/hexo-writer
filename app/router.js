@@ -10,4 +10,7 @@ module.exports = app => {
 
     router.get('/tag', controller.tag.index);
     router.get('/category', controller.category.index);
+
+    router.get('/auth/token', controller.auth.token);
+    router.post('/auth/login', controller.auth.login);
 }

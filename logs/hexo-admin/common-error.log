@@ -209,3 +209,11 @@ hostname: WINDOWS-NI56JDF
 pid: 2484
 hostname: WINDOWS-NI56JDF
 
+2020-01-06 21:07:25,502 ERROR 10080 nodejs.ClusterClientNoResponseError: client no response in 1958733ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (D:\Programming\workspace\hexo\hexo-writer\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (timers.js:327:15)
+    at processTimers (timers.js:271:5)
+name: "ClusterClientNoResponseError"
+pid: 10080
+hostname: WINDOWS-NI56JDF
+
