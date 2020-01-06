@@ -16,7 +16,7 @@
     "node-rsa": "^1.0.7",
     "qs": "^6.9.1",
     "react": "16.4.1",
-    "react-dom": "16.4.1",
+    "react-dom": "16.4.2",
     "react-hot-loader": "^4.12.18",
     "react-pace-progress": "^2.0.0",
     "react-router-dom": "^5.1.2",
