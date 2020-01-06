@@ -6,7 +6,7 @@ const dayjs = require('dayjs');
 
 class PostService extends Service {
 
-    index(page, limit) {
+    index(current=0, limit=10) {
 
         const { hexo } = this.app;
 
@@ -14,15 +14,32 @@ class PostService extends Service {
         const posts = hexo.locals.get('posts').data;
         posts.sort((a, b) => dayjs(a.updated).valueOf() < dayjs(b.updated).valueOf());
 
-        const items =  posts.map(post => {
-            delete post.prev;
-            delete post.next;
-            post.id = post._id;
-            return post;
-        })
+        const offset = current * limit;
+
+        let items = [];
+        if (posts.length < offset + limit) {
+            items = posts.slice(offset);
+        } else {
+            items = posts.slice(offset, offset + limit);
+        }
+
+        console.log('offset=' + offset, items.length);
+
+        const valueItems = items.map(post => ({
+            title: post.title,
+            slug: post.slug,
+            layout: post.layout,
+            date: post.layout,
+            updated: post.updated,
+            comments: post.comments,
+            tags: post.tags.map(tag => tag.name),
+            categories: post.categories.map(c => c.name),
+            permalink: post.permalink,
+            id: post._id,
+        }));
 
         return {
-            items,
+            items: valueItems,
             total: posts.length
         }
     }

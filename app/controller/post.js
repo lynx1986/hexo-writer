@@ -7,8 +7,9 @@ class PostController extends Controller {
     async index() {
 
         const { ctx } = this;
+        const { current, limit } = ctx.query;
 
-        const postPage = await ctx.service.post.index();
+        const postPage = await ctx.service.post.index(current, limit);
 
         ctx.body = {
             data: { ...postPage }

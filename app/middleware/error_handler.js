@@ -19,7 +19,7 @@ module.exports = () => {
     }
     catch (err) {
       
-      ctx.helper.log('error', LOGGER, MODULE, METHOD, '服务异常', err);
+      console.log(err);
 
       // 返回错误码（默认：500）
       ctx.body = {
