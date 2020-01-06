@@ -174,10 +174,10 @@ class Base {
     // 取得结果
     runInAction('创建结束', () => {
 
-      if (rsp.code == 200) {
-        const { data: { item } } = rsp;
-        store.item = item;
-      }
+      // if (rsp.code == 200) {
+      //   const { data: { item } } = rsp;
+      //   store.item = item;
+      // }
 
       store.status.creating = false;
       store.response.create = rsp.code;

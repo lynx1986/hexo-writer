@@ -1,0 +1,56 @@
+{
+  "name": "cra-element-ui-mobx",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "braft-editor": "^2.3.8",
+    "dayjs": "^1.8.17",
+    "deepcopy": "^2.0.0",
+    "element-react": "^1.4.34",
+    "element-theme-dark": "^1.0.3",
+    "element-theme-default": "^1.4.13",
+    "for-editor": "^0.3.4",
+    "mobx": "^5.15.0",
+    "mobx-react": "5.4.4",
+    "qs": "^6.9.1",
+    "react": "16.4.1",
+    "react-dom": "16.4.1",
+    "react-hot-loader": "^4.12.18",
+    "react-pace-progress": "^2.0.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "react-transition-group": "^4.3.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.7.0",
+    "customize-cra": "^0.9.1",
+    "element-theme": "^2.0.1",
+    "element-theme-chalk": "^2.12.0",
+    "mockjs": "^1.1.0",
+    "node-sass": "^4.13.0",
+    "react-app-rewired": "^2.1.5",
+    "sass-loader": "^8.0.0"
+  }
+}

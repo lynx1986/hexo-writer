@@ -1,6 +1,7 @@
 {
   "name": "hexo-admin",
   "dependencies": {
+    "dayjs": "^1.8.18",
     "egg": "^2.26.0",
     "egg-bin": "^4.14.1",
     "egg-cors": "^2.2.3",

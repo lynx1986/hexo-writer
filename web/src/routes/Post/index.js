@@ -7,8 +7,8 @@ import styles from './index.module.scss';
 
 const POST_COLUMNS = [
     { label: '标题', prop: 'title' },
-    { label: '创建日期', prop: 'date', width: 180 },
-    { label: 'slug', prop: 'slug', width: 240 },
+    { label: '最近更新', prop: 'updated', width: 180 },
+    { label: '文章URL', prop: 'slug', width: 240 },
     { label: '状态', prop: 'published', width: 180 },
     { label: '分类', prop: 'categories', width: 180 },
     { label: '标签', prop: 'tags', width: 240 },
@@ -37,7 +37,7 @@ class Post extends React.Component {
             }}
         ];
 
-        this.COLUMNS[1].render = data => <span>{dayjs(data.date).format('YYYY-MM-DD HH:mm')}</span>;
+        this.COLUMNS[1].render = data => <span>{dayjs(data.updated).format('YYYY-MM-DD HH:mm')}</span>;
         this.COLUMNS[3].render = data => <span>{data.published ? '已发布' : '未发布'}</span>
         this.COLUMNS[4].render = data => <span>{data.categories.data.join(',')}</span>;
         this.COLUMNS[5].render = data => <span>{data.tags.data.join(',')}</span>;
@@ -92,6 +92,29 @@ class Post extends React.Component {
 
     handleCreate = () => {
         this.props.history.push('/post/new_post');
+    }
+
+    handleRemove = item => {
+
+        MessageBox
+            .confirm('此操作用用就删除该文章，是否继续？', '删除提示', { type: 'warning' })
+            .then(() => {
+                this.props.post.remove({
+                    params: {
+                        slug: item.slug
+                    },
+                    callback: {
+                        success: () => {
+                            Message.success({ 
+                                message: '删除成功', 
+                                duration: 1500,
+                                onClose: () => this.props.post.refresh()
+                            });
+                        },
+                        fail: () => Message.fail('删除失败，请稍后再试')
+                    }
+                });
+            });
     }
 }
 

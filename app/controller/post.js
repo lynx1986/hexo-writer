@@ -8,15 +8,10 @@ class PostController extends Controller {
 
         const { ctx } = this;
 
-        const items = await ctx.service.post.index();
+        const postPage = await ctx.service.post.index();
 
         ctx.body = {
-            errcode: 0,
-            errmsg: '',
-            data: {
-                items,
-                total: items.length
-            }
+            data: { ...postPage }
         }
     }
 
@@ -26,11 +21,14 @@ class PostController extends Controller {
         const post = ctx.request.body;
 
         await ctx.service.post.create(post);
+    }
 
-        ctx.body = {
-            errcode: 0,
-            errmsg: '',
-        }
+    async remove() {
+
+        const { ctx } = this;
+        const slug = ctx.params.slug;
+
+        await ctx.service.post.remove(slug);
     }
 }
 

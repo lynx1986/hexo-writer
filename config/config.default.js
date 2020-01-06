@@ -11,5 +11,6 @@ module.exports = {
       enable: false
     },
     domainWhiteList: ['http://localhost:3000']
-  }
+  },
+  middleware: [ 'errorHandler']
 }

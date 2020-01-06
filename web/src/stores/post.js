@@ -18,7 +18,7 @@ class PostStore extends BaseStore {
         const store = this[domain];
 
         const query = {
-            current: 0,
+            current: store.page.current,
             limit: store.page.limit,
             ...params
         };
@@ -35,11 +35,23 @@ class PostStore extends BaseStore {
 
         payload = { ...BaseStore.PAYLOAD, ...payload };
         const { params, callback, domain } = payload;
-        const store = this[domain];
 
         // 提交
         const URL = Constants.URL + '/post';
         await super.create(URL, params, callback, domain);
+    }
+
+    /**
+     * 删除文章
+     */
+    async remove(payload) {
+
+        payload = { ...BaseStore.PAYLOAD, ...payload };
+        const { params, callback, domain } = payload;
+
+        // 提交
+        const URL = Constants.URL + '/post/' + params.slug;
+        await super.remove(URL, callback, domain);
     }
 }
 
