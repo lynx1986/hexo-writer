@@ -5,7 +5,8 @@ import { Form, Input, Button, Layout, Message } from 'element-react';
 import styles from './index.module.scss';
 
 @inject(stores => ({
-  app: stores.app
+  app: stores.app,
+  auth: stores.auth
 }))
 @observer
 class Login extends React.Component {
@@ -16,6 +17,10 @@ class Login extends React.Component {
     this.state = {
       form: { username: '', password: '' }
     };
+  }
+
+  componentDidMount() {
+    this.props.auth.fetchToken();
   }
 
   render() {
@@ -49,14 +54,16 @@ class Login extends React.Component {
 
   handleLogin = () => {
 
-    const { app, history } = this.props;
     const { form } = this.state;
 
-    app.login(form, {
-      success: () => {
-        Message({ message: '登录成功', type: 'success', duration: 1000, onClose: () => history.replace('/') });
+    this.props.auth.login({
+      params: form,
+      callback: {
+        success: () => {
+          Message({ message: '登录成功', type: 'success', duration: 1000, onClose: () => this.props.history.push('/') });
+        }
       }
-    })
+    });
   }
 }
 

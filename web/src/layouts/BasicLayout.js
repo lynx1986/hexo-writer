@@ -13,6 +13,7 @@ import { Breadcrumb, Dropdown, Button, Form, Switch } from 'element-react';
 
 @inject(stores => ({
   app: stores.app,
+  auth: stores.auth,
   route: stores.route
 }))
 @observer
@@ -30,6 +31,11 @@ class BasicLayout extends React.Component {
 
   componentDidMount() {
     this.loadTimer = setTimeout(() => this.setState({ loading: false }), 1000);
+
+    console.log(this.props.auth.token);
+    if (!this.props.auth.basic.token) {
+      this.props.history.replace('/user/login');
+    }
   }
 
   componentWillUnmount() {
