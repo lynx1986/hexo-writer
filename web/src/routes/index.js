@@ -14,6 +14,8 @@ import Editor from './Editor';
 import PostIndex from './Post/index';
 import PostDetail from './Post/detail';
 
+import ConfigIndex from './Config/index';
+
 import Login from './Login';
 import Page404 from './NotFound';
 import User from './User';
@@ -25,24 +27,25 @@ const blankRoutes = [
 ];
 
 const basicRoutes = [
-  { path: '/', name: '首页', layout: BasicLayout, icon: 'all', component: Home },
-  { path: '/post', name: '文章', layout: BasicLayout, icon: 'all', component: PostIndex },
+  // { path: '/', name: '首页', layout: BasicLayout, icon: 'all', component: Home },
+  { path: '/post', name: '文章', layout: BasicLayout, icon: 'editor', component: PostIndex },
   { path: '/post/:slug', name: '文章详情', layout: BasicLayout, component: PostDetail, hidden: true },
-  { 
-    path: '/component', name: '组件', layout: BasicLayout, icon: 'similar-product', 
-    children: [
-      { path: '/icon', name: '图标', layout: BasicLayout, component: Icon, icon: 'atm' },
-      { path: '/editor', name: '编辑器', layout: BasicLayout, component: Editor, icon: 'editor' },
-    ]
-  },
-  {
-    path: '/page', name: '页面', layout: BasicLayout, icon: 'form',
-    children: [
-      { path: '/notFound', name: '404', component: Page404, icon: 'cry' },
-      { path: '/user', name: '用户管理', component: User, icon: 'Customermanagement' },
-      { path: '/user/:id', name: '用户详情', component: UserDetail, hidden: true },
-    ]
-  }
+  { path: '/config', name: '配置', layout: BasicLayout, icon: 'atm', component: ConfigIndex },
+  // { 
+  //   path: '/component', name: '组件', layout: BasicLayout, icon: 'similar-product', 
+  //   children: [
+  //     { path: '/icon', name: '图标', layout: BasicLayout, component: Icon, icon: 'atm' },
+  //     { path: '/editor', name: '编辑器', layout: BasicLayout, component: Editor, icon: 'editor' },
+  //   ]
+  // },
+  // {
+  //   path: '/page', name: '页面', layout: BasicLayout, icon: 'form',
+  //   children: [
+  //     { path: '/notFound', name: '404', component: Page404, icon: 'cry' },
+  //     { path: '/user', name: '用户管理', component: User, icon: 'Customermanagement' },
+  //     { path: '/user/:id', name: '用户详情', component: UserDetail, hidden: true },
+  //   ]
+  // }
 ];
 
 function getRouteInfos(routes) {

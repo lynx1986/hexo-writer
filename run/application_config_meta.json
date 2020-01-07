@@ -1,259 +1,261 @@
 {
-  "keys": "D:\\Programming\\workspace\\hexo\\hexo-admin\\config\\config.default.js",
+  "keys": "/Volumes/Extend/workspace/learning/hexo-writer/config/config.default.js",
   "static": {
-    "prefix": "D:\\Programming\\workspace\\hexo\\hexo-admin\\config\\config.default.js",
-    "dir": "D:\\Programming\\workspace\\hexo\\hexo-admin\\config\\config.default.js",
-    "dynamic": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-static\\config\\config.default.js",
-    "preload": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-static\\config\\config.default.js",
-    "buffer": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-static\\config\\config.default.js",
-    "maxFiles": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-static\\config\\config.default.js"
+    "prefix": "/Volumes/Extend/workspace/learning/hexo-writer/config/config.default.js",
+    "dir": "/Volumes/Extend/workspace/learning/hexo-writer/config/config.default.js",
+    "dynamic": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-static/config/config.default.js",
+    "preload": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-static/config/config.default.js"
   },
   "security": {
     "csrf": {
-      "enable": "D:\\Programming\\workspace\\hexo\\hexo-admin\\config\\config.default.js",
-      "type": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "ignoreJSON": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "useSession": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "cookieName": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "sessionName": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "headerName": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "bodyName": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "queryName": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "refererWhiteList": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Volumes/Extend/workspace/learning/hexo-writer/config/config.default.js",
+      "type": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js"
     },
-    "domainWhiteList": "D:\\Programming\\workspace\\hexo\\hexo-admin\\config\\config.default.js",
-    "protocolWhiteList": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
+    "domainWhiteList": "/Volumes/Extend/workspace/learning/hexo-writer/config/config.default.js",
+    "protocolWhiteList": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
     "xframe": {
-      "enable": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+      "value": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.local.js",
-      "maxAge": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "includeSubdomains": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js"
     },
     "dta": {
-      "enable": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js"
     },
     "methodnoallow": {
-      "enable": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js"
     },
     "noopen": {
-      "enable": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js"
     },
     "nosniff": {
-      "enable": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js"
     },
     "referrerPolicy": {
-      "enable": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+      "value": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js"
     },
     "xssProtection": {
-      "enable": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+      "value": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js"
     },
     "csp": {
-      "enable": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "policy": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+      "policy": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js",
-      "checkAddress": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js"
+      "ipBlackList": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js"
     }
   },
+  "middleware": "/Volumes/Extend/workspace/learning/hexo-writer/config/config.default.js",
   "session": {
-    "maxAge": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-session\\config\\config.default.js",
-    "key": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-session\\config\\config.default.js",
-    "httpOnly": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-session\\config\\config.default.js",
-    "encrypt": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-session\\config\\config.default.js"
+    "maxAge": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-session/config/config.default.js",
+    "key": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-session/config/config.default.js"
   },
   "helper": {
-    "shtml": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-security\\config\\config.default.js"
+    "shtml": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security/config/config.default.js"
   },
   "jsonp": {
-    "limit": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "callback": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "csrf": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-jsonp\\config\\config.default.js"
+    "limit": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-jsonp/config/config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-onerror\\config\\config.default.js",
-    "appErrorFilter": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-onerror\\config\\config.default.js",
-    "templatePath": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-onerror\\config\\config.default.js"
+    "errorPageUrl": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-onerror/config/config.default.js"
   },
   "i18n": {
-    "defaultLocale": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "dirs": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "queryField": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieField": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieDomain": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieMaxAge": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-i18n\\config\\config.default.js"
+    "defaultLocale": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-watcher\\config\\config.local.js",
+    "type": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-watcher/config/config.local.js",
     "eventSources": {
-      "default": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-watcher\\config\\config.default.js",
-      "development": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-watcher\\config\\config.default.js"
+      "default": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-watcher/config/config.default.js"
     }
   },
   "customLogger": {
     "scheduleLogger": {
-      "consoleLevel": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-schedule\\config\\config.default.js",
-      "file": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-schedule\\config\\config.default.js"
+      "consoleLevel": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-schedule/config/config.default.js"
     }
   },
   "schedule": {
-    "directory": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-schedule\\config\\config.default.js"
+    "directory": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-schedule/config/config.default.js"
   },
   "multipart": {
-    "mode": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "autoFields": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "defaultCharset": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldNameSize": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldSize": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fields": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileSize": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "files": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileExtensions": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "whitelist": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-multipart\\config\\config.default.js",
-    "tmpdir": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-multipart\\config\\config.default.js",
+    "mode": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/config/config.default.js",
     "cleanSchedule": {
-      "cron": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-multipart\\config\\config.default.js"
+      "cron": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/config/config.default.js"
     }
   },
   "development": {
-    "watchDirs": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-development\\config\\config.default.js",
-    "ignoreDirs": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-development\\config\\config.default.js",
-    "fastReady": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-development\\config\\config.default.js",
-    "reloadOnDebug": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-development\\config\\config.default.js",
-    "overrideDefault": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-development\\config\\config.default.js"
+    "watchDirs": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-development/config/config.default.js"
   },
   "logrotator": {
-    "filesRotateByHour": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "hourDelimiter": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "filesRotateBySize": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFileSize": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFiles": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "rotateDuration": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxDays": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-logrotator\\config\\config.default.js"
+    "filesRotateByHour": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/config/config.default.js"
   },
   "view": {
-    "root": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-view\\config\\config.default.js",
-    "cache": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-view\\config\\config.local.js",
-    "defaultExtension": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-view\\config\\config.default.js",
-    "defaultViewEngine": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-view\\config\\config.default.js",
-    "mapping": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-view\\config\\config.default.js"
+    "root": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-view/config/config.default.js",
+    "cache": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-view/config/config.default.js"
   },
-  "cors": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg-cors\\config\\config.default.js",
-  "env": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-  "name": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-  "cookies": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-  "proxy": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-  "maxIpsCount": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-  "maxProxyCount": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-  "protocolHeaders": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-  "ipHeaders": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-  "hostHeaders": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
+  "cors": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-cors/config/config.default.js",
+  "env": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+  "name": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+  "cookies": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+  "proxy": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
   "pkg": {
-    "name": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
+    "name": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
     "dependencies": {
-      "egg": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-bin": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-      "egg-cors": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-      "hexo": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+      "dayjs": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+      "egg": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+      "hexo": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
     },
     "scripts": {
-      "dev": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+      "dev": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
     }
   },
-  "baseDir": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-  "HOME": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-  "rundir": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
+  "baseDir": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+  "HOME": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+  "rundir": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
   "dump": {
-    "ignore": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+    "ignore": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
   },
   "confusedConfigurations": {
-    "bodyparser": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "notFound": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "sitefile": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "middlewares": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "httpClient": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+    "bodyparser": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "notFound": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "sitefile": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "middlewares": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "httpClient": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
   },
   "notfound": {
-    "pageUrl": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+    "pageUrl": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+    "/favicon.ico": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
   },
   "bodyParser": {
-    "enable": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "formLimit": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "jsonLimit": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "textLimit": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "strict": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
+    "enable": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "encoding": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "formLimit": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "textLimit": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "strict": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
     "queryString": {
-      "arrayLimit": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-      "depth": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-      "parameterLimit": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+      "arrayLimit": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+      "depth": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
     },
-    "onerror": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+    "onerror": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
   },
   "logger": {
-    "dir": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "env": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "level": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "consoleLevel": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "disableConsoleAfterReady": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "outputJSON": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "buffer": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "appLogName": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "coreLogName": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "agentLogName": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "errorLogName": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
+    "dir": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "encoding": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "env": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "level": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "buffer": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "appLogName": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
     "coreLogger": {
-      "consoleLevel": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.local.js"
+      "consoleLevel": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.local.js"
     },
-    "allowDebugAtProd": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+    "allowDebugAtProd": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheLookupInterval": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheMaxLength": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
+    "enableDNSCache": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
     "request": {
-      "timeout": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+      "timeout": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
     }
   },
   "meta": {
-    "enable": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "logging": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+    "enable": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "logging": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
   },
-  "coreMiddleware": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-  "workerStartTimeout": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-  "serverTimeout": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
+  "coreMiddleware": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
   "cluster": {
     "listen": {
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-      "port": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-      "hostname": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+      "path": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+      "port": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+      "hostname": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js",
-    "responseTimeout": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+    "maxWaitTime": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
   },
-  "onClientError": "D:\\Programming\\workspace\\hexo\\hexo-admin\\node_modules\\egg\\config\\config.default.js"
+  "onClientError": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/config.default.js"
 }

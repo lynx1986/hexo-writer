@@ -39,8 +39,8 @@ class Post extends React.Component {
 
         this.COLUMNS[1].render = data => <span>{dayjs(data.updated).format('YYYY-MM-DD HH:mm')}</span>;
         this.COLUMNS[3].render = data => <span>{data.published ? '已发布' : '未发布'}</span>
-        this.COLUMNS[4].render = data => <span>{data.categories.data.join(',')}</span>;
-        this.COLUMNS[5].render = data => <span>{data.tags.data.join(',')}</span>;
+        this.COLUMNS[4].render = data => <span>{data.categories.join(',')}</span>;
+        this.COLUMNS[5].render = data => <span>{data.tags.join(',')}</span>;
     }
 
     componentDidMount() {
@@ -115,6 +115,14 @@ class Post extends React.Component {
                     }
                 });
             });
+    }
+
+    handleCurrentChange = current => {
+
+        const page = this.props.post.page();
+        this.props.post.refresh({
+            params: { current: current - 1, limit: page.limit }
+        });
     }
 }
 

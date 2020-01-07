@@ -1,8 +1,9 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
+import { toJs } from 'mobx';
 import { Layout, Alert, Loading, Button, Message, Dialog, Form, Input } from 'element-react';
 import Markdown from 'for-editor';
-import dayjs from 'dayjs';
+import TagInput from '../../components/TagInput';
 
 const FORM_RULES = {
     title: [{ required: true, message: '请输入文章标题', trigger: 'blur' }],
@@ -10,7 +11,9 @@ const FORM_RULES = {
 };
 
 @inject(stores => ({
-    post: stores.post
+    post: stores.post,
+    tag: stores.tag,
+    category: stores.category
 }))
 @observer
 export default class Detail extends React.Component {
@@ -19,22 +22,31 @@ export default class Detail extends React.Component {
         super(props);
 
         const { slug } = props.match.params;
-        this.post = props.post.items().find(item => item.slug == slug) || {}
+        this.post = props.post.items().find(item => item.slug == slug) || { }
 
         this.state = { 
             content: this.post._content || '',
             posting: false,
             form: {
                 title: this.post.title || '',
-                slug: this.post.slug || ''
+                slug: this.post.slug || '',
+                tags: this.post.tags || [],
             }
         };
+    }
+
+    componentDidMount() {
+        this.props.tag.refresh();
+        this.props.category.refresh();
     }
 
     render() {
 
         const { content, posting, form } = this.state;
         const status = this.props.post.status();
+        console.log(form.tags);
+
+        const tags = this.props.tag.items();
 
         return (
             <div className='page-content'>
@@ -59,6 +71,9 @@ export default class Detail extends React.Component {
                             <Form.Item label='文章URL' prop="slug">
                                 <Input value={form.slug} placeholder='例如：hello-world'  onChange={v => this.handleFormChange(v, 'slug')} />
                             </Form.Item>
+                            <Form.Item label='标签' prop="tags">
+                                <TagInput allTags={tags} tags={form.tags} onAdd={this.handleAddTag} onRemove={this.handleRemoveTag} />
+                            </Form.Item>
                         </Form>
                     </Dialog.Body>
                     <Dialog.Footer>
@@ -68,6 +83,27 @@ export default class Detail extends React.Component {
                 </Dialog>
             </div>
         )
+    }
+
+    handleRemoveTag = tagName => {
+        const { tags } = this.state.form;
+        const index = tags.indexOf(tagName)
+        if (index >= 0) {
+            tags.splice(index, 1);
+        }
+        this.setState({
+            form: Object.assign({}, this.state.form, { ['tags']: tags })
+        });
+    }
+
+    handleAddTag = tagName => {
+        const { tags } = this.state.form;
+        if (tags.indexOf(tagName) < 0) {
+            tags.push(tagName);
+        }
+        this.setState({
+            form: Object.assign({}, this.state.form, { ['tags']: tags })
+        });
     }
 
     handleFormChange = (v, fieldProp) => {
