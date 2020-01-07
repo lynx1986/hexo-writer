@@ -61,6 +61,9 @@ class Login extends React.Component {
       callback: {
         success: () => {
           Message({ message: '登录成功', type: 'success', duration: 1000, onClose: () => this.props.history.push('/') });
+        },
+        fail: () => {
+          Message.error({ message: '登录失败，请稍后重试', duration: 1000 });
         }
       }
     });

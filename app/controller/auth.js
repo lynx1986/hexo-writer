@@ -1,4 +1,5 @@
 'use strict';
+const jwtCoder = require('jwt-simple');
 
 const Controller = require('egg').Controller;
 
@@ -35,12 +36,27 @@ class AuthController extends Controller {
         } else {
 
             // 创建TOKEN并返回
-            const token = await ctx.helper.createJwt({ username, password });
+            const token = await ctx.helper.createJwt({ username, password: decryptedPwd });
             console.log('创建TOKEN=' + token);
             ctx.body = {
                 data: {
                     item: token
                 }
+            }
+        }
+    }
+
+    async loginByToken() {
+
+        const { ctx, config } = this;
+        const { account } = config;
+
+        // 创建TOKEN并返回
+        const token = await ctx.helper.createJwt(account);
+        console.log('创建TOKEN=' + token);
+        ctx.body = {
+            data: {
+                item: token
             }
         }
     }

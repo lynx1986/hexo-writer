@@ -1,10 +1,17 @@
 import axios from 'axios';
+import Constants from '../Constants';
 
 const HEADERS = {}
 
 const request = async function(url, method='GET', data) {
 
   const headers = HEADERS;
+
+  const token = window.localStorage.getItem(Constants.TOKEN);
+  console.log('取得token=' + token);
+  if (token) {
+    headers[Constants.JWT_NAME] = token;
+  }
 
   return new Promise(resolve => {
 

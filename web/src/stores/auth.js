@@ -11,6 +11,15 @@ import Constants from '../Constants';
  */
 class AuthStore extends BaseStore {
 
+    // constructor() {
+    //     super();
+
+    //     const token = window.localStorage.getItem(Constants.TOKEN);
+    //     if (token) {
+    //         this.autoLogin();
+    //     }
+    // }
+
     @observable token = '';
 
     async fetchToken(payload) {
@@ -24,11 +33,64 @@ class AuthStore extends BaseStore {
     }
 
     @action
-    async login(payload) {
+    async autoLogin(payload) {
 
         payload = { ...BaseStore.PAYLOAD, ...payload };
         const { params, callback, domain } = payload;
 
+        const store = this[domain];
+
+        runInAction('登陆开始', () => { store.status.updating = true; });
+
+        // 提交登陆
+        const URL = Constants.URL + '/auth/loginByToken';
+        const rsp = await api.request(URL, 'POST', params);
+
+        // 取得结果
+        runInAction('登陆结束', () => {
+
+            if (rsp.code == 200) {
+                const { data: { item } } = rsp;
+                store.token = item;
+                window.localStorage.setItem(Constants.TOKEN, item);
+                console.log('登录成功，设定TOKEN=' + item);
+            } else {
+                store.token = null;
+                window.localStorage.removeItem(Constants.TOKEN);
+                console.log('登录失败，清除TOKEN');
+            }
+
+            store.status.updating = false;
+            store.response.update = rsp.code;
+        });
+
+        // 执行回调方法
+        super.execCallback(callback, rsp.code, rsp.data);
+    }
+
+    @action
+    async logout(payload) {
+
+        payload = { ...BaseStore.PAYLOAD, ...payload };
+        const { callback, domain } = payload;
+        const store = this[domain];
+
+        // 清除TOKEN
+        runInAction('退出登录', () => {
+            window.localStorage.removeItem(Constants.TOKEN);
+            store.token = null;
+        });
+
+        // 执行回调方法
+        const rsp = { code: 200 };
+        super.execCallback(callback, rsp.code, rsp.data);
+    }
+
+    @action
+    async login(payload) {
+
+        payload = { ...BaseStore.PAYLOAD, ...payload };
+        const { params, callback, domain } = payload;
         const store = this[domain];
 
         // 将密码加密
@@ -48,6 +110,8 @@ class AuthStore extends BaseStore {
             if (rsp.code == 200) {
                 const { data: { item } } = rsp;
                 store.token = item;
+                window.localStorage.setItem(Constants.TOKEN, item);
+                console.log('登录成功，设定TOKEN=' + item);
             }
 
             store.status.updating = false;

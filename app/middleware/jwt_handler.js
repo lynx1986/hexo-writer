@@ -2,7 +2,6 @@ const jwtCoder = require('jwt-simple');
 const INTEGER_REG = /^\+?[1-9][0-9]*$/;
 const UUID_REG = /^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$/;
 
-
 function parseUrl(url) {
   
     // 定义识别出的ID
@@ -41,8 +40,10 @@ module.exports = () => {
 
         const { jwt, account } = ctx.app.config;
 
-        const token = ctx.request.header[jwt.key];
+        const token = ctx.get(jwt.key);
         const secret = jwt.secret;
+
+        console.log('jwtHandler 取得token和secret', token, secret);
 
         // 解析URL和URL中的ID（包括UUID格式）
         const { url, method } = ctx.request;
@@ -58,6 +59,8 @@ module.exports = () => {
         try {
 
             const decoded = jwtCoder.decode(token, secret);
+            console.log('解析token成功', decoded);
+
             if (!decoded || !decoded.exp || decoded.exp <= Date.now()) {
                 ctx.body = { errcode: 401 };
                 return;
@@ -71,7 +74,7 @@ module.exports = () => {
         }
         catch (err) {
             console.log(err);
-            ctx.body = { code: errcode };
+            ctx.body = { errcode: 401 };
             return;
         }
 

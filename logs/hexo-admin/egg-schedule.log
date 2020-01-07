@@ -184,3 +184,39 @@
 2020-01-06 22:20:44,490 INFO 8508 [egg-schedule]: register schedule D:\Programming\workspace\hexo\hexo-writer\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
 2020-01-06 22:20:44,490 INFO 8508 [egg-schedule]: register schedule D:\Programming\workspace\hexo\hexo-writer\node_modules\egg-logrotator\app\schedule\clean_log.js
 2020-01-06 22:20:44,490 INFO 8508 [egg-schedule]: register schedule D:\Programming\workspace\hexo\hexo-writer\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-01-07 09:03:17,511 INFO 1320 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-07 09:03:17,511 INFO 1320 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-07 09:03:17,511 INFO 1320 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-07 09:03:18,973 INFO 1316 [Timer] /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 70001031ms at 2020-01-08 04:30:00.004
+2020-01-07 09:03:18,974 INFO 1316 [Timer] /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 53801027ms at 2020-01-08 00:00:00.001
+2020-01-07 09:03:18,974 INFO 1316 [Timer] /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 53802026ms at 2020-01-08 00:00:01.000
+2020-01-07 09:12:36,799 INFO 2243 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-07 09:12:36,799 INFO 2243 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-07 09:12:36,799 INFO 2243 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-07 09:14:33,100 INFO 2792 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-07 09:14:33,100 INFO 2792 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-07 09:14:33,100 INFO 2792 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-07 10:51:38,134 INFO 9865 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-07 10:51:38,134 INFO 9865 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-07 10:51:38,135 INFO 9865 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-07 10:52:32,291 INFO 9908 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-07 10:52:32,291 INFO 9908 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-07 10:52:32,291 INFO 9908 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-07 10:53:22,813 INFO 10345 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-07 10:53:22,813 INFO 10345 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-07 10:53:22,813 INFO 10345 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-07 10:53:53,568 INFO 10475 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-07 10:53:53,568 INFO 10475 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-07 10:53:53,568 INFO 10475 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-07 10:54:19,873 INFO 10498 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-07 10:54:19,873 INFO 10498 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-07 10:54:19,873 INFO 10498 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-07 10:59:29,790 INFO 11270 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-07 10:59:29,790 INFO 11270 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-07 10:59:29,790 INFO 11270 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-07 11:01:16,836 INFO 11834 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-07 11:01:16,836 INFO 11834 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-07 11:01:16,836 INFO 11834 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-01-07 11:05:04,550 INFO 12507 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-01-07 11:05:04,550 INFO 12507 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-01-07 11:05:04,550 INFO 12507 [egg-schedule]: register schedule /Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator/app/schedule/rotate_by_file.js

@@ -77,7 +77,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -90,8 +90,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-watcher\\lib\\event-sources\\default",
-        "development": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+        "default": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
@@ -114,7 +114,7 @@
       "files": 10,
       "fileExtensions": [],
       "whitelist": null,
-      "tmpdir": "C:\\Users\\ADMINI\\x7e1\\AppData\\Local\\Temp\\egg-multipart-tmp\\hexo-admin",
+      "tmpdir": "/var/folders/pk/xx3wm6h55jqghknx_l66yhj00000gn/T/egg-multipart-tmp/hexo-admin",
       "cleanSchedule": {
         "cron": "0 30 4 * * *"
       }
@@ -138,8 +138,8 @@
     "static": {
       "prefix": "/",
       "dir": [
-        "D:\\Programming\\workspace\\hexo\\hexo-writer\\dist",
-        "D:\\Programming\\workspace\\hexo\\hexo-writer\\app\\public"
+        "/Volumes/Extend/workspace/learning/hexo-writer/dist",
+        "/Volumes/Extend/workspace/learning/hexo-writer/app/public"
       ],
       "dynamic": true,
       "preload": false,
@@ -147,7 +147,7 @@
       "maxFiles": 1000
     },
     "view": {
-      "root": "D:\\Programming\\workspace\\hexo\\hexo-writer\\app\\view",
+      "root": "/Volumes/Extend/workspace/learning/hexo-writer/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -179,9 +179,9 @@
         "dev": "egg-bin dev"
       }
     },
-    "baseDir": "D:\\Programming\\workspace\\hexo\\hexo-writer",
-    "HOME": "C:\\Users\\Administrator",
-    "rundir": "D:\\Programming\\workspace\\hexo\\hexo-writer\\run",
+    "baseDir": "/Volumes/Extend/workspace/learning/hexo-writer",
+    "HOME": "/Users/lynx",
+    "rundir": "/Volumes/Extend/workspace/learning/hexo-writer/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -213,7 +213,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "D:\\Programming\\workspace\\hexo\\hexo-writer\\logs\\hexo-admin",
+      "dir": "/Volumes/Extend/workspace/learning/hexo-writer/logs/hexo-admin",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -290,7 +290,7 @@
       "expires": 7,
       "key": "auth-jwt",
       "whitelist": [
-        "POST /user/login",
+        "POST /auth/login",
         "GET /auth/token"
       ]
     },
@@ -310,8 +310,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-session",
+      "from": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/plugin.js",
+      "path": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -323,8 +323,8 @@
         "session"
       ],
       "env": [],
-      "from": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-security",
+      "from": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/plugin.js",
+      "path": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-security",
       "version": "2.7.1"
     },
     "jsonp": {
@@ -336,8 +336,8 @@
         "security"
       ],
       "env": [],
-      "from": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-jsonp",
+      "from": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/plugin.js",
+      "path": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -349,8 +349,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-onerror",
+      "from": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/plugin.js",
+      "path": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -360,8 +360,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-i18n",
+      "from": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/plugin.js",
+      "path": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -371,8 +371,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-watcher",
+      "from": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/plugin.js",
+      "path": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -382,8 +382,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-schedule",
+      "from": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/plugin.js",
+      "path": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -395,8 +395,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-multipart",
+      "from": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/plugin.js",
+      "path": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-multipart",
       "version": "2.10.1"
     },
     "development": {
@@ -410,8 +410,8 @@
       "env": [
         "local"
       ],
-      "from": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-development",
+      "from": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/plugin.js",
+      "path": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-development",
       "version": "2.4.3"
     },
     "logrotator": {
@@ -423,8 +423,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-logrotator",
+      "from": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/plugin.js",
+      "path": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -434,8 +434,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-static",
+      "from": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/plugin.js",
+      "path": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -445,8 +445,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-view",
+      "from": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg/config/plugin.js",
+      "path": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-view",
       "version": "2.1.2"
     },
     "cors": {
@@ -456,18 +456,9 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\Programming\\workspace\\hexo\\hexo-writer\\config\\plugin.js",
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-writer\\node_modules\\egg-cors",
+      "from": "/Volumes/Extend/workspace/learning/hexo-writer/config/plugin.js",
+      "path": "/Volumes/Extend/workspace/learning/hexo-writer/node_modules/egg-cors",
       "version": "2.2.3"
-    },
-    "eggJwt": {
-      "enable": true,
-      "path": "D:\\Programming\\workspace\\hexo\\hexo-writer\\lib\\plugin\\egg-jwt",
-      "name": "eggJwt",
-      "dependencies": [],
-      "optionalDependencies": [],
-      "env": [],
-      "from": "D:\\Programming\\workspace\\hexo\\hexo-writer\\config\\plugin.js"
     }
   }
 }

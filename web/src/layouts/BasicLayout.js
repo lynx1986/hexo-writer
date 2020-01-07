@@ -30,12 +30,15 @@ class BasicLayout extends React.Component {
   }
 
   componentDidMount() {
+    
     this.loadTimer = setTimeout(() => this.setState({ loading: false }), 1000);
 
-    console.log(this.props.auth.token);
-    if (!this.props.auth.basic.token) {
-      this.props.history.replace('/user/login');
-    }
+    // 自动登录
+    this.props.auth.autoLogin({
+      callback: {
+        fail: () => this.props.history.replace('/user/login')
+      }
+    });
   }
 
   componentWillUnmount() {
@@ -182,9 +185,8 @@ class BasicLayout extends React.Component {
    * 点击退出登录
    */
   handleLogout = () => {
-    this.props.app.logout({
-      success: () => this.props.history.replace('/user/login')
-    })
+    this.props.auth.logout();
+    this.props.history.replace('/user/login');
   }
 
   /**

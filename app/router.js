@@ -13,4 +13,5 @@ module.exports = app => {
 
     router.get('/auth/token', controller.auth.token);
     router.post('/auth/login', controller.auth.login);
+    router.post('/auth/loginByToken', controller.auth.loginByToken);
 }

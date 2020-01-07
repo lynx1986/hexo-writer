@@ -12,9 +12,9 @@ module.exports = () => {
         await next();
 
         ctx.body = {
-            ...ctx.body,
             errcode: 0,
-            errmsg: ''
+            errmsg: '',
+            ...ctx.body
         };
     }
     catch (err) {
