@@ -5,9 +5,11 @@
     "egg": "^2.26.0",
     "egg-bin": "^4.14.1",
     "egg-cors": "^2.2.3",
+    "egg-static": "^2.2.0",
     "hexo": "^4.2.0",
     "jwt-simple": "^0.5.6",
-    "node-rsa": "^1.0.7"
+    "node-rsa": "^1.0.7",
+    "qcloud-cos-sts": "^3.0.2"
   },
   "scripts": {
     "dev": "egg-bin dev"

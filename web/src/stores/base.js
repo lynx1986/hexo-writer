@@ -12,7 +12,8 @@ const STORE = {
     updating: false,
     removing: false,
     creating: false,
-    validating: false
+    validating: false,
+    uploading: false
   },
   response: {
     refresh: '',
@@ -20,7 +21,8 @@ const STORE = {
     update: '',
     remove: '',
     create: '',
-    validate: ''
+    validate: '',
+    upload: ''
   },
   page: {
     total: 0,

@@ -38,6 +38,7 @@ export default class Detail extends React.Component {
     componentDidMount() {
         this.props.tag.refresh();
         this.props.category.refresh();
+        this.props.post.initilizeCos();
     }
 
     render() {
@@ -128,8 +129,14 @@ export default class Detail extends React.Component {
         })
     }
 
-    handleAddImage = e => {
-        console.log(e);
+    handleAddImage = file => {
+        console.log(file);
+
+        this.props.post.upload({
+            params: {
+                file
+            }
+        });
     }
 
     handlePublish = () => {

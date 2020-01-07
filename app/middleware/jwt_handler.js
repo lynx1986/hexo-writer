@@ -43,15 +43,13 @@ module.exports = () => {
         const token = ctx.get(jwt.key);
         const secret = jwt.secret;
 
-        console.log('jwtHandler 取得token和secret', token, secret);
-
         // 解析URL和URL中的ID（包括UUID格式）
         const { url, method } = ctx.request;
         const parsedUrl = parseUrl(url);
         const paramUrl = method + ' ' + parsedUrl.url;
 
         // 如果在白名单中，不校验
-        if (jwt.whitelist.indexOf(paramUrl) >= 0) {
+        if (jwt.whitelist.indexOf(paramUrl) >= 0 || parsedUrl.url.indexOf('/admin') == 0) {
             await next();
             return;
         }

@@ -3,9 +3,27 @@
 const NodeRSA = require('node-rsa');
 const jwtCoder = require('jwt-simple');
 const dayjs = require('dayjs');
-
+const STS = require('qcloud-cos-sts');
 
 module.exports = {
+
+    async fetchCosCredential() {
+
+        const { scope, secretId, secretKey } = this.config.qcloud;
+
+        return new Promise(resolve => {
+
+            const policy = STS.getPolicy(scope);
+            STS.getCredential({ secretId, secretKey, policy }, function(err, credential) {
+                if (err) {
+                    console.log(err);
+                    resolve(null);
+                } else {
+                    resolve(credential);
+                }
+            });
+        })
+    },
 
     /**
      * 创建Jwt

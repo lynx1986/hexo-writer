@@ -1,5 +1,4 @@
 'use strict';
-const jwtCoder = require('jwt-simple');
 
 const Controller = require('egg').Controller;
 
@@ -12,6 +11,19 @@ class AuthController extends Controller {
 
         ctx.body = {
             data: { item: token }
+        };
+    }
+
+    async cosToken() {
+
+        const { ctx } = this;
+        
+        const credential = await ctx.helper.fetchCosCredential();
+
+        ctx.body = {
+            data: {
+                item: credential
+            }
         };
     }
 

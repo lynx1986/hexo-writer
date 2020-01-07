@@ -11,16 +11,8 @@ import Constants from '../Constants';
  */
 class AuthStore extends BaseStore {
 
-    // constructor() {
-    //     super();
-
-    //     const token = window.localStorage.getItem(Constants.TOKEN);
-    //     if (token) {
-    //         this.autoLogin();
-    //     }
-    // }
-
     @observable token = '';
+    
 
     async fetchToken(payload) {
 

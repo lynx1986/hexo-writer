@@ -36,6 +36,7 @@ class PostService extends Service {
             categories: post.categories.map(c => c.name),
             permalink: post.permalink,
             id: post._id,
+            _content: post._content
         }));
 
         return {

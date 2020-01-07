@@ -1,19 +1,12 @@
-const resolvePath = (path) => require('path').resolve(__dirname, path)
 
-const PRIVATE_KEY = '-----BEGIN RSA PRIVATE KEY-----\n' +
-                    'MIIBOwIBAAJBAK/2xZKgVoNMWBXc/o/1PmG9hl/c0A+fTMVF+5icz5TvU97YBIdt\n' +
-                    'YCD2PRjkQ+5hoBcKtIbLiqSUBrfyu5fDHK8CAwEAAQJAUVlKecD6ffTbfDAQ18jP\n' +
-                    'MCyIZOUWo0JIIaN671D/fqBpQUDYgrioJ7GiARJgOpYT8igloTYsH/WGoj7DQTy1\n' +
-                    '4QIhAOaN3pFxSvOFQVURwNniNFkPj1XCin2lGiwG2/AE2oWJAiEAw2J/ZDgbrJnd\n' +
-                    '0iel/0oouiinSr84TYQ4FEBCxSb+OncCIQCT3KLEZoNqQKkQ1Oz5D/EAuVD08Gp/\n' +
-                    'gFaTq+Z8PbCj+QIhAJSGXKa3jDoB4UCvCR3uptUUsE8+2zL57pNeYiNyx9FzAiAk\n' +
-                    'Hv9NRPfZ+z9eFQ6VZJ0eZK3OpfVi3gZ/Dp2hlEdDQA==' +
-                    '-----END RSA PRIVATE KEY-----';
+const path = require('path');
 
-const PUBLIC_KEY =  '-----BEGIN PUBLIC KEY-----\n' +
-                    'MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAK/2xZKgVoNMWBXc/o/1PmG9hl/c0A+f\n' +
-                    'TMVF+5icz5TvU97YBIdtYCD2PRjkQ+5hoBcKtIbLiqSUBrfyu5fDHK8CAwEAAQ==\n' +
-                    '-----END PUBLIC KEY-----';
+
+const resolvePath = (p) => path.resolve(__dirname, p)
+
+const PRIVATE_KEY = '';
+
+const PUBLIC_KEY =  '';
 
 
 module.exports = {
@@ -21,7 +14,7 @@ module.exports = {
   keys: 'hexo-admin',
 
   static: {
-    prefix: '/',
+    prefix: '',
     dir: [resolvePath('../dist'), resolvePath('../app/public')]
   },
 
@@ -29,7 +22,7 @@ module.exports = {
     csrf: {
       enable: false
     },
-    domainWhiteList: ['http://localhost:3000']
+    domainWhiteList: ['http://localhost:3000'] // For 开发
   },
 
   middleware: [ 'errorHandler', 'jwtHandler'],
@@ -46,12 +39,23 @@ module.exports = {
     key: 'auth-jwt',
     whitelist: [
       'POST /auth/login',
-      'GET /auth/token'
+      'GET /auth/token',
     ]
   },
 
   account: {
     username: 'admin',
     password: '123abc'
+  },
+
+  qcloud: {
+    scope: [{
+        action: '',
+        bucket: '',
+        region: 'ap-beijing',
+        prefix: '*'
+    }],
+    secretId: '',
+    secretKey: ''
   }
 }

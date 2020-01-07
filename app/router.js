@@ -12,6 +12,7 @@ module.exports = app => {
     router.get('/category', controller.category.index);
 
     router.get('/auth/token', controller.auth.token);
+    router.get('/auth/cosToken', controller.auth.cosToken);
     router.post('/auth/login', controller.auth.login);
     router.post('/auth/loginByToken', controller.auth.loginByToken);
 }
