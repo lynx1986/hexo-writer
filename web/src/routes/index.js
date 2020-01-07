@@ -27,7 +27,7 @@ const blankRoutes = [
 ];
 
 const basicRoutes = [
-  // { path: '/', name: '首页', layout: BasicLayout, icon: 'all', component: Home },
+  { path: '/', name: '首页', layout: BasicLayout, icon: 'all', component: Home },
   { path: '/post', name: '文章', layout: BasicLayout, icon: 'editor', component: PostIndex },
   { path: '/post/:slug', name: '文章详情', layout: BasicLayout, component: PostDetail, hidden: true },
   { path: '/config', name: '配置', layout: BasicLayout, icon: 'atm', component: ConfigIndex },
@@ -71,7 +71,7 @@ class PageRoutes extends React.Component {
 
   constructor(props) {
     super(props);
-    this.history = createBrowserHistory();
+    this.history = createBrowserHistory({ basename: 'admin' });
     this.props.route.init(this.history);
   }
 
