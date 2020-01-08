@@ -69,9 +69,10 @@ class PostStore extends BaseStore {
             }
         }, function(err, data) {
             if (err) {
-                console.log(err);
+                callback && callback.fail && callback.fail();
             } else {
                 console.log(data);
+                callback && callback.success && callback.success(data.Location);
             }
         })
     }
