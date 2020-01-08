@@ -4,6 +4,8 @@ module.exports = app => {
 
     const { router, controller } = app;
 
+    router.get('/', controller.view.index);
+
     router.get('/post', controller.post.index);
     router.post('/post', controller.post.create);
     router.delete('/post/:slug', controller.post.remove);

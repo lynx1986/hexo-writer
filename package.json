@@ -6,6 +6,7 @@
     "egg-bin": "^4.14.1",
     "egg-cors": "^2.2.3",
     "egg-static": "^2.2.0",
+    "egg-view-nunjucks": "^2.2.0",
     "hexo": "^4.2.0",
     "jwt-simple": "^0.5.6",
     "node-rsa": "^1.0.7",

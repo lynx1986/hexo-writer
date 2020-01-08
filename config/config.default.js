@@ -11,7 +11,7 @@ module.exports = {
 
   static: {
     prefix: '',
-    dir: [resolvePath('../dist'), resolvePath('../app/public')]
+    dir: [resolvePath('../dist'), resolvePath('../web/build')]
   },
 
   security: {
@@ -26,6 +26,11 @@ module.exports = {
   // RSA加密相关
   rsa: rsaInfo,
 
+  view: {
+    root: [resolvePath('../web/build')].join(','),
+    defaultViewEngine: 'nunjucks',
+  },
+
   jwt: {
     enable: true,
     secret: '123abc',
@@ -34,6 +39,7 @@ module.exports = {
     whitelist: [
       'POST /auth/login',
       'GET /auth/token',
+      'GET /'
     ]
   },
 

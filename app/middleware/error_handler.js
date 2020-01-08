@@ -11,11 +11,16 @@ module.exports = () => {
     try {
         await next();
 
-        ctx.body = {
+        const { url, method } = ctx.request;
+        console.log(url);
+
+        if (url != '/') {
+          ctx.body = {
             errcode: 0,
             errmsg: '',
             ...ctx.body
-        };
+          };
+        }
     }
     catch (err) {
       

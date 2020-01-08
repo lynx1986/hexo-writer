@@ -86,6 +86,7 @@ class AuthStore extends BaseStore {
         const store = this[domain];
 
         // 将密码加密
+        console.log('登录加密，公钥=' + store.item);
         const publicKey = new NodeRSA(store.item);
         publicKey.setOptions({ encryptionScheme: 'pkcs1' });
         params.password = publicKey.encrypt(params.password, 'base64');

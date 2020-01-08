@@ -47,6 +47,7 @@ module.exports = () => {
         const { url, method } = ctx.request;
         const parsedUrl = parseUrl(url);
         const paramUrl = method + ' ' + parsedUrl.url;
+        console.log('访问路径= ' + paramUrl);
 
         // 如果在白名单中，不校验
         if (jwt.whitelist.indexOf(paramUrl) >= 0 || parsedUrl.url.indexOf('/admin') == 0) {

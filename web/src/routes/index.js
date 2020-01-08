@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route,  Router, Switch, Redirect } from 'react-router-dom';
-import { createBrowserHistory } from "history";
+import { createBrowserHistory, createHashHistory } from "history";
 import { observer, inject, toJS } from 'mobx-react';
 
 
@@ -71,7 +71,7 @@ class PageRoutes extends React.Component {
 
   constructor(props) {
     super(props);
-    this.history = createBrowserHistory({ basename: 'admin' });
+    this.history = createHashHistory({ basename: '' });
     this.props.route.init(this.history);
   }
 
