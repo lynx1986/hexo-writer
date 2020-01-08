@@ -33,6 +33,8 @@ export default class Detail extends React.Component {
                 tags: this.post.tags || [],
             }
         };
+
+        this.$vm = React.createRef();
     }
 
     componentDidMount() {
@@ -54,7 +56,7 @@ export default class Detail extends React.Component {
                 <Loading loading={status.creating} text='提交中，请稍候'>
                     <Layout.Row type='flex' justify='center'>
                         <Layout.Col>
-                            <Markdown ref='editor' height='700px' preview subfield value={content} onChange={this.handleChange} addImg={this.handleAddImage} />
+                            <Markdown ref={this.$vm} height='700px' preview subfield value={content} onChange={this.handleChange} addImg={this.handleAddImage} />
                         </Layout.Col>
                     </Layout.Row>
                 </Loading>
@@ -138,7 +140,7 @@ export default class Detail extends React.Component {
             callback: {
                 success: url => {
                     console.log(url);
-                    this.refs.editor.current.$img2Url(file.name, url)
+                    this.$vm.current.$img2Url(file.name, url)
                 },
                 fail: Message.error('上传失败，请稍后再试')
             }
