@@ -72,7 +72,7 @@ class PostStore extends BaseStore {
                 callback && callback.fail && callback.fail();
             } else {
                 console.log(data);
-                callback && callback.success && callback.success(data.Location);
+                callback && callback.success && callback.success('https://' + data.Location);
             }
         })
     }
