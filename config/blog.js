@@ -2,6 +2,8 @@
 
 module.exports = {
 
+    base: '',
+
     account: {
         username: 'admin',
         password: '123abc'
@@ -9,7 +11,7 @@ module.exports = {
     
     qcloud: {
         scope: [{
-            action: '',
+            action: 'name/cos:PutObject',
             bucket: '',
             region: 'ap-beijing',
             prefix: '*'

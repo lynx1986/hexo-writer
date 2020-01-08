@@ -7,7 +7,9 @@ class AppBootHook {
 
   async didLoad() {
 
-    const hexo = new Hexo('/Volumes/Extend/workspace/learning/hexo-blog', {});
+    const blog = this.app.config.blog;
+
+    const hexo = new Hexo(blog.base, {});
 
     await hexo.init();
     await hexo.watch();

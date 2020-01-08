@@ -1,6 +1,6 @@
 
 const rsaInfo = require('./rsa');
-const appInfo = require('./app');
+const blog = require('./blog');
 
 const path = require('path');
 const resolvePath = (p) => path.resolve(__dirname, p)
@@ -18,7 +18,7 @@ module.exports = {
     csrf: {
       enable: false
     },
-    domainWhiteList: ['http://localhost:3000'] // For Dev
+    domainWhiteList: ['http://localhost:3000', 'http://127.0.0.1:7001'] // For Dev
   },
 
   middleware: [ 'errorHandler', 'jwtHandler'],
@@ -43,7 +43,9 @@ module.exports = {
     ]
   },
 
-  account: appInfo.account,
+  blog: blog,
 
-  qcloud: appInfo.qcloud
+  account: blog.account,
+
+  qcloud: blog.qcloud
 }
