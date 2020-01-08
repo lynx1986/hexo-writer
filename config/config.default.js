@@ -22,7 +22,7 @@ module.exports = {
     csrf: {
       enable: false
     },
-    domainWhiteList: ['http://localhost:3000'] // For 开发
+    domainWhiteList: ['http://localhost:3000'] // For Dev
   },
 
   middleware: [ 'errorHandler', 'jwtHandler'],
@@ -38,8 +38,8 @@ module.exports = {
     expires: 7,
     key: 'auth-jwt',
     whitelist: [
-      'POST /auth/login',
-      'GET /auth/token',
+      'POST /admin/auth/login',
+      'GET /admin/auth/token',
     ]
   },
 
