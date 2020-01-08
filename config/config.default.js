@@ -1,13 +1,9 @@
 
+const rsaInfo = require('./rsa');
+const appInfo = require('./app');
+
 const path = require('path');
-
-
 const resolvePath = (p) => path.resolve(__dirname, p)
-
-const PRIVATE_KEY = '';
-
-const PUBLIC_KEY =  '';
-
 
 module.exports = {
 
@@ -27,10 +23,8 @@ module.exports = {
 
   middleware: [ 'errorHandler', 'jwtHandler'],
 
-  rsa: {
-    public: PUBLIC_KEY,
-    private: PRIVATE_KEY
-  },
+  // RSA加密相关
+  rsa: rsaInfo,
 
   jwt: {
     enable: true,
@@ -38,24 +32,12 @@ module.exports = {
     expires: 7,
     key: 'auth-jwt',
     whitelist: [
-      'POST /admin/auth/login',
-      'GET /admin/auth/token',
+      'POST /auth/login',
+      'GET /auth/token',
     ]
   },
 
-  account: {
-    username: 'admin',
-    password: '123abc'
-  },
+  account: appInfo.account,
 
-  qcloud: {
-    scope: [{
-        action: '',
-        bucket: '',
-        region: 'ap-beijing',
-        prefix: '*'
-    }],
-    secretId: '',
-    secretKey: ''
-  }
+  qcloud: appInfo.qcloud
 }
