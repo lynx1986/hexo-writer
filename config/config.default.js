@@ -11,7 +11,7 @@ module.exports = {
 
   static: {
     prefix: '',
-    dir: [resolvePath('../dist'), resolvePath('../web/build')]
+    dir: [resolvePath('../dist'), resolvePath('../web/dist')]
   },
 
   security: {
@@ -27,7 +27,7 @@ module.exports = {
   rsa: rsaInfo,
 
   view: {
-    root: [resolvePath('../web/build')].join(','),
+    root: [resolvePath('../web/dist')].join(','),
     defaultViewEngine: 'nunjucks',
   },
 
