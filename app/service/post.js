@@ -52,12 +52,12 @@ class PostService extends Service {
         // 如果已经有ID，替换
         if (post.hasOwnProperty('_id')) {
             delete post['_id'];
-            hexo.post.create(post, true);
+            hexo.post.publish(post, true);
         } 
         // 新建
         else {
             console.log('提交文章，无ID，进行添加');
-            hexo.post.create(post);
+            hexo.post.publish(post);
         }
     }
 
