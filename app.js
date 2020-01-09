@@ -14,12 +14,6 @@ class AppBootHook {
     await hexo.init();
     await hexo.watch();
 
-    hexo.on('processAfter', function(post) {
-      hexo.call('generate', {}).then(function() {
-        console.log('BLOG重新生成')
-      });
-    })
-
     this.app.hexo = hexo;
   }
 

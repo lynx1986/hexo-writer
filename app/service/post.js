@@ -53,17 +53,22 @@ class PostService extends Service {
         // 如果已经有ID，替换
         if (post.hasOwnProperty('id')) {
             delete post['id'];
-            hexo.post.create(post, true);
+            hexo.post.create(post, true).then(function() {
+                hexo.call('generate', {}).then(function() {
+                    console.log('BLOG重新生成')
+                });
+            })
         } 
         // 新建
         else {
             console.log('提交文章，无ID，进行添加');
-            hexo.post.create(post);
+            hexo.post.create(post).then(function() {
+                hexo.call('generate', {}).then(function() {
+                    console.log('BLOG重新生成')
+                });
+            })
         }
 
-        // hexo.call('generate', {}).then(function() {
-        //     console.log('BLOG重新生成')
-        // });
     }
 
     remove(slug) {
@@ -76,9 +81,9 @@ class PostService extends Service {
             fs.unlinkSync(path);
         }
 
-        // hexo.call('generate', {}).then(function() {
-        //     console.log('BLOG重新生成')
-        // });
+        hexo.call('generate', {}).then(function() {
+            console.log('BLOG重新生成')
+        });
     }
 }
 
