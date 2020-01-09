@@ -60,6 +60,10 @@ class PostService extends Service {
             console.log('提交文章，无ID，进行添加');
             hexo.post.create(post);
         }
+
+        hexo.call('generate', {}).then(function() {
+            console.log('BLOG重新生成')
+        });
     }
 
     remove(slug) {
