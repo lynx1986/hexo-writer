@@ -152,8 +152,8 @@ export default class Detail extends React.Component {
         const { content, form } = this.state;
 
         const post = { ...form, content };
-        if (this.post.hasOwnProperty('_id')) {
-            post['_id'] = this.post._id;
+        if (this.post.hasOwnProperty('id')) {
+            post['id'] = this.post.id;
         }
 
         this.props.post.create({
