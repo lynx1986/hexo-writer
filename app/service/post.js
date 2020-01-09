@@ -37,6 +37,7 @@ class PostService extends Service {
             permalink: post.permalink,
             published: post.published,
             id: post._id,
+            index_img: post.index_img,
             _content: post._content
         }));
 
