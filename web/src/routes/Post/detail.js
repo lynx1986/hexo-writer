@@ -160,6 +160,10 @@ export default class Detail extends React.Component {
             post['id'] = this.post.id;
         }
 
+        if (post.slug != this.post.slug) {
+            post['oldSlug'] = this.post.slug;
+        }
+
         this.props.post.create({
             params: post,
             callback: {

@@ -51,6 +51,9 @@ class PostService extends Service {
 
         const { hexo } = this.app;
 
+        const oldSlug = post.oldSlug;
+        delete post['oldSlug'];
+
         // 如果已经有ID，替换
         if (post.hasOwnProperty('id')) {
             delete post['id'];
@@ -70,6 +73,9 @@ class PostService extends Service {
             })
         }
 
+        if (oldSlug) {
+            this.remove(oldSlug);
+        }
     }
 
     remove(slug) {
