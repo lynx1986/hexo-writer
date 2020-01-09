@@ -61,9 +61,9 @@ class PostService extends Service {
             hexo.post.create(post);
         }
 
-        hexo.call('generate', {}).then(function() {
-            console.log('BLOG重新生成')
-        });
+        // hexo.call('generate', {}).then(function() {
+        //     console.log('BLOG重新生成')
+        // });
     }
 
     remove(slug) {
@@ -75,6 +75,10 @@ class PostService extends Service {
         if (fs.existsSync(path)) {
             fs.unlinkSync(path);
         }
+
+        // hexo.call('generate', {}).then(function() {
+        //     console.log('BLOG重新生成')
+        // });
     }
 }
 
