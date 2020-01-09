@@ -35,6 +35,7 @@ class PostService extends Service {
             tags: post.tags.map(tag => tag.name),
             categories: post.categories.map(c => c.name),
             permalink: post.permalink,
+            published: post.published,
             id: post._id,
             _content: post._content
         }));
@@ -52,12 +53,12 @@ class PostService extends Service {
         // 如果已经有ID，替换
         if (post.hasOwnProperty('_id')) {
             delete post['_id'];
-            hexo.post.publish(post, true);
+            hexo.post.create(post, true);
         } 
         // 新建
         else {
             console.log('提交文章，无ID，进行添加');
-            hexo.post.publish(post);
+            hexo.post.create(post);
         }
     }
 
