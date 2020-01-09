@@ -31,6 +31,7 @@ export default class Detail extends React.Component {
                 title: this.post.title || '',
                 slug: this.post.slug || '',
                 tags: this.post.tags || [],
+                index_img: this.post.index_img || ''
             }
         };
 
@@ -76,6 +77,9 @@ export default class Detail extends React.Component {
                             </Form.Item>
                             <Form.Item label='标签' prop="tags">
                                 <TagInput allTags={tags} tags={form.tags} onAdd={this.handleAddTag} onRemove={this.handleRemoveTag} />
+                            </Form.Item>
+                            <Form.Item label='首页缩略图' prop="index_img">
+                                <Input value={form.index_img} placeholder='图片地址'  onChange={v => this.handleFormChange(v, 'index_img')} />
                             </Form.Item>
                         </Form>
                     </Dialog.Body>
