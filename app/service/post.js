@@ -51,8 +51,8 @@ class PostService extends Service {
         const { hexo } = this.app;
 
         // 如果已经有ID，替换
-        if (post.hasOwnProperty('_id')) {
-            delete post['_id'];
+        if (post.hasOwnProperty('id')) {
+            delete post['id'];
             hexo.post.create(post, true);
         } 
         // 新建
