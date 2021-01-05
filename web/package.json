@@ -4,7 +4,7 @@
   "homepage": ".",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "braft-editor": "^2.3.8",
     "cos-js-sdk-v5": "^0.5.22",
     "dayjs": "^1.8.17",
